@@ -1,0 +1,16 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  position: fixed;
+
+  left: 1px;
+  top: 2px;
+
+  width: max-content;
+
+  margin: 0.5vw;
+
+  gap: 0.5vw;
+}

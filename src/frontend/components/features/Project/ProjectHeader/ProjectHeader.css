@@ -1,0 +1,35 @@
+.projects-header__form {
+  grid-area: project-header;
+
+  border-radius: var(----border-radius);
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px;
+
+  gap: 2.5px;
+
+  border: solid var(--border) 1px;
+
+  background-color: var(--bg-secondary);
+  color: var(--font);
+}
+
+.projects-header__required {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+}
+
+.projects-header__title {
+  width: 100%;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.projects-header__submit {
+  grid-area: submit;
+  padding: 0;
+  margin: auto;
+}

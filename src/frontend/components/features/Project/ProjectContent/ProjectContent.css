@@ -1,0 +1,35 @@
+.projects__element,
+.projects__element--active {
+  grid-column: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  border: solid var(--border) 1px;
+  border-radius: var(----border-radius);
+  justify-content: stretch;
+  color: var(--font);
+  margin: 5px;
+  background-color: var(--bg-secondary);
+  height: fit-content !important;
+  padding: 10px;
+}
+
+.projects__element > p {
+  overflow-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+}
+
+.projects__element:hover {
+  background-color: var(--hover);
+}
+
+.projects__element > svg {
+  margin: 0;
+}
+
+.projects__element--active {
+  border: 1px solid var(--accent) !important;
+}

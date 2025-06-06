@@ -1,0 +1,29 @@
+.projects__update-form {
+  padding: 0.5em;
+}
+
+.projects__update-form > * {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1em 0;
+}
+
+.projects__update-confirm {
+  margin: 0;
+  align-self: flex-start;
+}
+
+#projects__update-title {
+  overflow-wrap: break-word;
+  line-height: var(--font-size);
+  hyphens: auto;
+  font-size: var(--font-size);
+  size: var(--font-size);
+  width: 100%;
+  display: inline-block;
+  line-break: strict;
+  padding: 0;
+  align-content: center;
+
+  height: fit-content;
+}

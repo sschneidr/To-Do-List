@@ -1,0 +1,54 @@
+.tasks-filter > form {
+  grid-area: filter-settings;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.tasks-filter > *,
+.tasks-filter > * > * > * {
+  font-size: 14px !important;
+}
+
+.tasks-filter__buttons {
+  display: flex;
+
+  height: fit-content;
+
+  gap: 5px;
+}
+
+.tasks-filter__buttons > button {
+  height: fit-content;
+
+  padding: 4px;
+  margin: 0;
+
+  border: solid 1px var(--border) !important;
+  border-radius: var(----border-radius);
+}
+
+.tasks-filter__input {
+  display: flex;
+
+  height: fit-content;
+
+  gap: 5px;
+}
+
+.tasks-filter__input > * {
+  padding: 2px;
+}
+
+.tasks-filter__checkbox {
+  display: flex;
+
+  height: fit-content;
+}
+
+.tasks-filter__checkbox > label {
+  align-content: center;
+}

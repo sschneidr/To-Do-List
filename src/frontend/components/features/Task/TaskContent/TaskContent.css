@@ -1,0 +1,138 @@
+.task__data {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content max-content;
+  grid-template-rows: auto max-content auto auto auto;
+  grid-template-areas:
+    "task-date task-date task-date"
+    "task-title task-priority task-buttons"
+    "task-hline task-hline task-hline"
+    "task-description task-description task-description"
+    "task-notes-button task-notes-button task-notes-button"
+    "task-notes task-notes task-notes";
+
+  align-items: center;
+
+  height: fit-content;
+
+  margin-bottom: 2.5px;
+}
+
+.task__data > * {
+  padding: 5px;
+}
+
+.task__status--finished {
+  text-decoration: line-through;
+  color: var(--font-strikethrough) !important;
+}
+
+.task-hline {
+  grid-area: task-hline;
+  padding: 0 !important;
+}
+
+.task-notes-button {
+  grid-area: task-notes-button;
+  width: fit-content;
+  padding: 0.5em;
+  margin: 0.25em 0 0.5em 0.5em;
+  border: 1px solid var(--button) !important;
+  background-color: var(--bg-tertiary) !important;
+}
+
+.task__status {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.task__description {
+  grid-area: task-description;
+}
+
+.task__notes {
+  grid-area: task-notes;
+}
+
+.task__date {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  grid-area: task-date;
+  color: var(--date);
+  font-size: calc(var(--font-size) + 2.5px);
+  margin: 0;
+}
+
+.task__date > * {
+  margin: auto 0 auto 0;
+}
+
+.task__description,
+.task__notes {
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  color: var(--font-details);
+  white-space: normal;
+  height: 100%;
+  font-size: calc(var(--font-size) - 5px);
+}
+
+.task__notes > p,
+.task__description > p {
+  margin: 0;
+}
+
+.task__notes--hidden,
+.task__description--hidden {
+  display: none !important;
+}
+
+.task__description > textarea {
+  text-align: left;
+}
+
+.task__buttons {
+  display: flex;
+  grid-area: task-buttons;
+  align-items: center;
+}
+
+.task__checkbox {
+  display: flex;
+  grid-area: task-title;
+  align-items: center;
+
+  height: fit-content;
+}
+
+.task__priority--high,
+.task__priority--medium,
+.task__priority--low,
+.task__priority--undefined {
+  margin: 0;
+  grid-area: task-priority;
+  height: 25px;
+  align-self: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding-right: 7.5px;
+}
+
+.task__priority--high {
+  color: var(--priority-high);
+}
+
+.task__priority--medium {
+  color: var(--priority-medium);
+}
+
+.task__priority--low {
+  color: var(--priority-low);
+}
+
+.task__priority--undefined {
+  display: none;
+}

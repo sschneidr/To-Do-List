@@ -1,0 +1,18 @@
+.dashboard {
+  display: grid;
+  grid-template-columns: 20vw auto;
+  grid-template-areas: "projects tasks";
+  gap: 1vw;
+}
+
+.project {
+  grid-area: projects;
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "project-header"
+    "project-content"
+    "project-content";
+  gap: 1vw;
+}

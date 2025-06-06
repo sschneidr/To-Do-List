@@ -1,0 +1,33 @@
+.delete-prompt {
+  margin: 0 auto;
+}
+
+.delete-prompt > p {
+  font-size: 25px;
+}
+
+.delete-prompt__element {
+  color: var(--accent);
+}
+
+.delete-prompt__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.delete-prompt__buttons > button {
+  width: 100%;
+  padding: 5px;
+  margin: 1vw;
+
+  font-size: 20px;
+
+  border: 1px solid var(--border);
+}
+
+.delete-prompt__buttons > button:hover {
+  color: var(--font-input);
+
+  background-color: var(--accent);
+}

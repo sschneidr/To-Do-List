@@ -1,0 +1,80 @@
+.task__update-form {
+  padding: 0.5em;
+  width: 30vw;
+}
+
+.task__update-form > * {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1em 0;
+}
+
+.task__update-form > * > * {
+  padding: 0;
+  border: none;
+}
+
+.task__update-form > * > label {
+  font-size: 15px;
+}
+
+.task__update-form > * > input,
+.task__update-form > * > textarea,
+.task__update-form > * > select {
+  padding: 10px;
+}
+
+.task__update-title {
+  background-color: var(--bg-tertiary);
+  color: var(--font-input);
+  border: 0;
+
+  border-radius: var(----border-radius);
+
+  font-family: var(--main-font);
+}
+
+.task__update-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.task__update-description,
+.task__update-notes {
+  margin: 0;
+  resize: none;
+  white-space: normal;
+
+  height: 15vh;
+}
+
+.task__update-date {
+  display: flex;
+  gap: 5px;
+}
+
+.task__update-buttons {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  justify-content: space-around;
+  gap: 5px;
+  padding: 0 5px 0 5px;
+}
+
+.task__update-confirm,
+.task__update-exit {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 20px;
+  padding: 0.5em;
+  border: 1px solid var(--border-window);
+  background-color: var(--accent) !important;
+  color: var(--font-secondary) !important;
+}
+
+.task__update-confirm:hover,
+.task__update-exit:hover {
+  background-color: var(--hover) !important;
+}

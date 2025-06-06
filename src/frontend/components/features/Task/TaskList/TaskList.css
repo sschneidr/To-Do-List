@@ -1,0 +1,56 @@
+.tasks {
+  grid-area: tasks;
+
+  display: grid;
+  grid-template-columns: auto 20vw;
+  grid-template-rows: auto auto 20vh;
+  grid-template-areas:
+    "task-content task-header"
+    "task-content task-header"
+    "filter-settings task-header";
+  gap: 1vw;
+}
+
+.tasks-list {
+  grid-area: task-content;
+
+  display: flex;
+  flex-direction: column;
+
+  width: auto;
+  max-height: 75vh;
+  padding: 2.5%;
+
+  gap: 1em;
+
+  overflow: auto;
+
+  background-color: var(--bg-secondary);
+
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+}
+
+.tasks-list__element {
+  max-width: 100%;
+  max-height: max-content;
+  margin-bottom: 2.5px;
+
+  background-color: var(--task);
+
+  border: 1px solid var(--border-task);
+  border-radius: var(----border-radius);
+}
+
+.tasks-header {
+  grid-area: task-header;
+
+  display: flex;
+  flex-direction: column;
+
+  height: fit-content;
+
+  gap: 10px;
+
+  border-radius: var(----border-radius);
+}

@@ -1,0 +1,20 @@
+.navigation__tooltip {
+  position: absolute;
+
+  width: max-content;
+
+  padding: 5px;
+  margin: 0;
+
+  font-size: 15px;
+  color: var(--font-tooltip);
+
+  background-color: var(--accent);
+
+  border: 1px solid var(--border);
+  border-radius: var(----border-radius);
+}
+
+.navigation__tooltip--hidden {
+  display: none;
+}

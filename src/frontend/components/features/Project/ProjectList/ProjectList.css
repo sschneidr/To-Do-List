@@ -1,0 +1,6 @@
+.projects-list {
+  grid-area: project-content;
+  gap: 1vh;
+  height: 80vh;
+  overflow: auto;
+}
