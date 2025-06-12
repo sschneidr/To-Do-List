@@ -29,7 +29,7 @@
   color: var(--font-input);
   border: 0;
 
-  border-radius: var(----border-radius);
+  border-radius: var(--border-radius);
 
   font-family: var(--main-font);
 }

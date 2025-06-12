@@ -1,7 +1,7 @@
 .tasks-header__form {
   display: flex;
   flex-direction: column;
-  border-radius: var(----border-radius);
+  border-radius: var(--border-radius);
 
   background-color: var(--bg-secondary);
   color: var(--font);

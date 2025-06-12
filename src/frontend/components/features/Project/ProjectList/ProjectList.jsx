@@ -5,7 +5,6 @@ import { ProjectContent } from "../";
 import "./ProjectList.css";
 
 const port = import.meta.env.VITE_PORT;
-console.log(port);
 
 export default function ProjectList() {
   const { isPending, error, data } = useQuery({

@@ -12,7 +12,7 @@
   background-color: var(--accent);
 
   border: 1px solid var(--border);
-  border-radius: var(----border-radius);
+  border-radius: var(--border-radius);
 }
 
 .navigation__tooltip--hidden {

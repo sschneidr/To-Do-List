@@ -39,7 +39,7 @@
   background-color: var(--task);
 
   border: 1px solid var(--border-task);
-  border-radius: var(----border-radius);
+  border-radius: var(--border-radius);
 }
 
 .tasks-header {
@@ -52,5 +52,5 @@
 
   gap: 10px;
 
-  border-radius: var(----border-radius);
+  border-radius: var(--border-radius);
 }

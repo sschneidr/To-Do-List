@@ -6,55 +6,6 @@ import { useUpdateTask } from "../../../../common/hooks/taskMutations";
 
 import "./TaskEditor.css";
 
-const Priority = ({ priority }) => (
-  <div className="task__update-priority">
-    <label htmlFor="task-priority">priority</label>
-    <select id="task-priority" defaultValue={priority}>
-      <option readOnly></option>
-      <option value="high" readOnly>
-        high
-      </option>
-      <option value="medium" readOnly>
-        medium
-      </option>
-      <option value="low" readOnly>
-        low
-      </option>
-    </select>
-  </div>
-);
-
-const Date = ({ dueDate }) => (
-  <div className="task__update-date">
-    <label htmlFor="task-date">due date</label>
-    <input type="date" id="task-date" defaultValue={dueDate} />
-  </div>
-);
-
-const Details = ({ content, type }) => (
-  <>
-    <label htmlFor={`task-${type}`}>{`${type}`}</label>
-    <textarea
-      className={`task__update-${type}`}
-      id={`task-${type}`}
-      defaultValue={content}
-    ></textarea>
-  </>
-);
-
-const Title = ({ title }) => (
-  <div className="task__update-checkbox">
-    <label htmlFor="task-title">title</label>
-    <input
-      type="text"
-      className="task__update-title"
-      id="task-title"
-      required
-      defaultValue={title}
-    />
-  </div>
-);
-
 export default function TaskEditor({ setEditMode, task }) {
   const formRef = useRef(null);
 
@@ -79,6 +30,55 @@ export default function TaskEditor({ setEditMode, task }) {
       setEditMode(false);
     },
     [formRef, task, mutation, setEditMode]
+  );
+
+  const Priority = ({ priority }) => (
+    <div className="task__update-priority">
+      <label htmlFor="task-priority">priority</label>
+      <select id="task-priority" defaultValue={priority}>
+        <option readOnly></option>
+        <option value="high" readOnly>
+          high
+        </option>
+        <option value="medium" readOnly>
+          medium
+        </option>
+        <option value="low" readOnly>
+          low
+        </option>
+      </select>
+    </div>
+  );
+
+  const Date = ({ dueDate }) => (
+    <div className="task__update-date">
+      <label htmlFor="task-date">due date</label>
+      <input type="date" id="task-date" defaultValue={dueDate} />
+    </div>
+  );
+
+  const Details = ({ content, type }) => (
+    <>
+      <label htmlFor={`task-${type}`}>{`${type}`}</label>
+      <textarea
+        className={`task__update-${type}`}
+        id={`task-${type}`}
+        defaultValue={content}
+      ></textarea>
+    </>
+  );
+
+  const Title = ({ title }) => (
+    <div className="task__update-checkbox">
+      <label htmlFor="task-title">title</label>
+      <input
+        type="text"
+        className="task__update-title"
+        id="task-title"
+        required
+        defaultValue={title}
+      />
+    </div>
   );
 
   return (

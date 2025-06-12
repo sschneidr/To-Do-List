@@ -23,21 +23,15 @@ import { EditIcon, ClockIcon } from "../../../../common";
 import "./TaskContent.css";
 
 export default function TaskContent({ task }) {
-  // context hooks
-  const { selectedProject } = useContext(ProjectContext);
   const { showDetails } = useContext(DetailedViewContext);
 
   const [editMode, setEditMode] = useState(false);
-
-  // state hooks
   const [showNotes, setNotesDisplay] = useState(false);
 
   const tDate = GetDate(task.date);
-  // get the number of days left until task is due
   const daysLeft =
     tDate !== null ? GetDurationBetweenDates(tDate, new Date()) : null;
 
-  // set a color value depending on the number of days until task is due
   const dColor =
     daysLeft > 14
       ? "var(--due-later)"
@@ -52,7 +46,6 @@ export default function TaskContent({ task }) {
   const deleteMutation = useDeleteTask(task.title);
   const updateStatusMutation = useUpdateStatus();
 
-  // set task to finished or unfinished
   const updateStatus = useCallback(
     (e) => {
       e.preventDefault();
@@ -65,7 +58,6 @@ export default function TaskContent({ task }) {
   );
 
   const enableEditMode = () => setEditMode(true);
-  // show or hide notes
   const toggleNotes = () => setNotesDisplay(!showNotes);
 
   const DueDate = ({ date, daysLeft, dColor }) => (

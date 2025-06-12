@@ -1,7 +1,7 @@
 .projects-header__form {
   grid-area: project-header;
 
-  border-radius: var(----border-radius);
+  border-radius: var(--border-radius);
 
   display: flex;
   justify-content: space-between;

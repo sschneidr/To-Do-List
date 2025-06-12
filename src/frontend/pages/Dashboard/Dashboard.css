@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: 20vw auto;
   grid-template-areas: "projects tasks";
+
   gap: 1vw;
 }
 
@@ -14,5 +15,6 @@
     "project-header"
     "project-content"
     "project-content";
+
   gap: 1vw;
 }
